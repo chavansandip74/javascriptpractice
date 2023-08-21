@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="height: 2000px;width: 2000px;" onscroll="onscr()" onresize="onre()">
+<!-- <body onkeypress="keypress()" onkeyup="keyup()" onkeydown="keydown()" id="keyevent"> -->
+    <!-- <div class="box" id="color" style="height: 400px;width: 400px;float: left;background-color: red;"  ></div>
+    // event is follow 
+    <button onclick="changrc()">change color</button>
+    <button  ondblclick="redius()">dubble click</button>
+    <button  oncontextmenu="oncd()">right click</button>
+    <button  onmouseout="mouseout()">mouse out</button>
+    <button  onmouseenter="mousecenter()">mousecenter</button> -->
+    <form action="" onsubmit="onsub()">
+        <input type="text" name="" id="input1" onfocus="focus1('input1')" onblur="blr('input1')"><br><br>
+        <input type="text" name="" id="input2"onfocus="focus1('input2')" onblur="blr('input2')"><br><br>
+        <input type="text" name="" id="input3"onfocus="focus1('input3')" onblur="blr('input3')"><br><br>
+        <input type="text" name="" id="input4"onfocus="focus1('input4')" onblur="blr('input4')"><br><br>
+        <select name="" id="sel" onchange="onchange1()">
+        <option value="">choose1</option>
+        <option value="">choose2</option>
+        <option value="">choose3</option>
+        <option value="">choose4</option>
+        </select>
+        <button>submit</button>
+    </form>
+    <script>
+        //event
+        //mouse event
+        function changrc(){
+            document.getElementById('color').style.background="yellow";
+        }
+        function redius(){
+            document.getElementById('color').style.borderRadius="50%";
+        }
+        function oncd(){
+            document.getElementById('color').style.background="orange";
+        }
+        function mouseout(){
+            document.getElementById('color').style.background="blue";
+        }
+        function mousecenter(){
+            document.getElementById('color').style.background="green";
+        }
+
+
+        //keybord event
+        function keypress(){
+            document.getElementById('keyevent').style.background="green";
+        }
+        function keyup(){
+            document.getElementById('keyevent').style.background="orange";
+        }
+        function keydown(){
+            document.getElementById('keyevent').style.background="red";
+        }
+         
+
+
+        //
+        function focus1(val){
+            document.getElementById(val).style.background="red";
+        
+
+        }
+        function blr(val){
+            document.getElementById(val).style.background="blue";
+        
+        }
+        function onchange1(){
+            document.getElementById("sel").style.background="yellow"; 
+        }
+        
+        //
+        function onsub(){
+            alert();
+        }
+
+        //window event
+        function onscr(){
+            alert("scroling")
+        }
+        function onre(){
+            alert("resize")
+        }
+    </script>
+</body>
+</html>

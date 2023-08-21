@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array
+        var arr=[1,2,3,4,5];
+        document.write(arr[3]+"<br>")
+        for(var i=0;i<4;i++){
+            document.write(arr[i]+"<br>")
+        }
+        var arr1=new Array();//convert to array
+        for(var a=1;a<100;a++){
+            arr1[a]=a;
+        }
+        document.write(arr1[5]+"<br>")
+
+        document.write(arr1.reverse()+"<br>")
+        document.write(arr1.shift()+"<br>")
+        document.write(arr1.unshift(22,33)+"<br>")
+        document.write(arr1.pop()+"<br>")
+        document.write(arr1.push(1000)+"<br>")
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo" style="height: 300px;width: 300px; background-color: red;" ></div>
+
+    <button onclick="setintro()">start2</button>
+    <button onclick="clintro()">stop</button>
+    <script>
+        var mar = 0;
+        var id = '';
+    
+
+        function setintro() {
+            id = setInterval(margin1, 2000)
+        }
+        function clintro() {
+            clearInterval(id);
+        }
+        function margin1() {
+            mar+= 50;
+            document.getElementById('demo').style.marginLeft = +mar+"px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo1">welcome js</p>
+    <p id="demo2">welcome</p>
+    <p class="demo">welcome</p>
+    <button onclick="chng()">change</button><br><br>
+    <input type="text" name="name" id="inp" class="form design" required> -->
+    <input type="text" name="name" id="inp" onkeyup="info()" style="height: 80%; width: 50%;">
+    <h1 id="demo"></h1>
+    <p id="pr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore placeat, quia totam porro animi voluptates vero quas sed qui dicta. Tenetur quibusdam ut voluptas earum aliquam, neque provident quos pariatur reprehenderit, accusamus ipsa maiores unde fuga vel quam cumque qui quo, itaque quas voluptatem eaque inventore cum tempora illo! Quasi ut rem voluptas natus.</p>
+    <script>
+        //query selector all
+        //document.querySelector('#demo').style.color="red";
+        //document.querySelectorAll('.demo')[2].style.color="blue";
+        //  function chng(){
+        //     var data1=document.getElementById('demo1').innerText;
+        //     var data2=document.getElementById('demo2').innerText;
+        //     document.getElementById("demo1").innerText=data2;
+        //     document.getElementById('demo2').innerText=data1;
+        // }
+        //     var s=document.getElementById("inp").getAttribute('type');
+        //     console.log(s);
+        //     document.getElementById('inp').setAttribute('type','number');
+            
+        //     console.log(s);
+
+            //value get
+            function info(){
+                var a=document.getElementById("inp").value;
+                document.getElementById('demo').innerText=a;
+            }
+            document.getElementsByTagName('p')[0].style="color:red;background:yellow;"
+      
+            //style
+            innerText
+            innerHTML
+            getAttribute()
+            setAttribute()
+            value
+            style
+            append()
+            prepend()
+            hasclass
+            classname
+            removeAttribute
+    </script>
+</body>
+</html>

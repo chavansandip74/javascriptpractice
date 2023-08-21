@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function
+        function add(){
+            var a=prompt("enter number");
+            var b=prompt("enter 2 number")
+            var c=Number(a)+Number(b);
+            alert(c)
+        }
+       // add();//call to function
+    //   var a=function(){
+    //     alert("welcome");
+    //   }
+    //   a();
+    //   //function in expretion
+    //   var fun=function add(a,b){
+    //     var c=Number(a)+Number(b);
+    //     return c;
+    //   }
+    //   document.write(fun(10,20));
+
+    //   //arrow function
+    //   var addition=(a,b)=>{
+    //     document.write("arrow"+a);
+    //   }
+    //   addition("function")
+
+    //   //nested function
+    //   function demo(name){
+    //     function check(name){
+    //      var c="welcome"+name;
+    //      return c;
+    //     }
+    //     return check(name);
+    //   }
+    //   document.write(demo("chavan"));
+    function add(){
+        var n1=document.getElementById("num1").value;
+        var n2=document.getElementById("num2").value;
+        var c=Number(n1)+Number(n2);
+        document.getElementById("total").value=c;
+    }
+    var s=function sub(){
+        var n1=document.getElementById("num1").value;
+        var n2=document.getElementById("num2").value;
+        var c=Number(n1)-Number(n2);
+        document.getElementById("total").value=c;
+    }
+    var mult=()=>{
+        var n1=document.getElementById("num1").value;
+        var n2=document.getElementById("num2").value;
+        var c=Number(n1)*Number(n2);
+        document.getElementById("total").value=c;
+    }
+    var d=function div(){
+        var n1=document.getElementById("num1").value;
+        var n2=document.getElementById("num2").value;
+        var c=Number(n1)/Number(n2);
+        document.getElementById("total").value=c;
+    }
+
+    </script>
+    enter any number
+    <input type="text"  id="num1"><br>
+    enter any number
+    <input type="text"  id="num2"><br>
+    <button onclick="add(num1.value,num2.value)">+</button>
+    <button onclick="s(num1.value,num2.value)">-</button>
+    <button onclick="d(num1.value,num2.value)">/</button>
+    <button onclick="mult(num1.value,num2.value)">*</button><br>
+    <input type="text" id="total">
+</body>
+</html>

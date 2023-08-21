@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="data">welcome 1</p>
+    <p class="data">welcome 2</p>
+    <p class="data">welcome 3</p>
+    <p class="data">welcome 4</p>
+    <p class="data">welcome 5</p>
+    <p class="data">welcome 6</p>
+    <h1 >heading</h1>
+
+    <script>
+        //dom
+          
+        var da=document.getElementsByClassName('data');
+        for(var i=0;i<da.length;i++){
+            console.log(da[i].innerHTML)
+        }
+        var hh1=document.getElementsByTagName('h1')
+        console.log(hh1.innerHTML)
+        
+    </script>
+</body>
+</html>

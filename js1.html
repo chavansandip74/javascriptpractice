@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>name: <span id="name"></span></h1>
+    <script>
+        //variables
+        var a=30;
+        var b=20;
+        document.write(a+b);
+        document.write("<br>");
+        var name="sandip chavan";
+        console.log(name);
+        document.write("<br>");
+        alert(name);
+        document.getElementById('name').innerHTML=name;
+        if(true){
+            var ab="var ab";//var is global
+        }
+        document.write(ab);
+        document.write("<br>");
+        if(true){
+            let al="let al";//let is in only block
+        }
+        // document.write(al);
+        const ab1="const ab";  //const is value is constant or unique
+        document.write(ab1);
+
+        //data type
+
+        // number(int,float)
+        var n=12;
+        var n2=5.25;
+        document.write(typeof n2);
+        document.write("<br>");
+        // String
+        var str="sandip";
+
+        var str2='sandip chavan'
+        document.write(str2)
+        // Boolean
+        var b1=true;//1
+        var b2=false;//0
+        document.write("<br>");
+        document.write(b1);
+        document.write("<br>");
+        document.write(typeof b1);
+        // null
+        var nn=null;
+        document.write("<br>");
+        document.write(typeof nn);
+        document.write("<br>");
+        document.write(nn);
+        // undefined
+         var un;
+         document.write("<br>");
+        document.write(typeof un);
+        document.write("<br>");
+        document.write(un);
+
+        
+    </script>
+</body>
+</html>
